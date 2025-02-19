@@ -29,7 +29,7 @@
   line-height: 33.8px;
 }
 #section #section1 > div {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,4 +76,330 @@
 #section #section2 {
   height: 179px;
   width: 100%;
+  margin-top: 20px;
+  border-radius: 16px;
+  background-image: url("./photos/section2back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 30px 45px;
+  overflow: hidden;
+}
+#section #section2 p:nth-child(1) {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  z-index: 5;
+}
+#section #section2 p:nth-child(2) {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+  z-index: 5;
+}
+#section #section2 #aircraft {
+  position: absolute;
+  width: 52%;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#section #section2 #section2BackColor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(3, 160, 217);
+  background: linear-gradient(90deg, rgb(3, 160, 217) 0%, rgba(3, 160, 217, 0.567) 47%, rgb(104, 223, 242) 100%);
+  z-index: 2;
+}
+#section #section2 #ball {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 184px;
+}
+#section #section2 #circle {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 315px;
+}
+#section #section2 #circle05 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 450px;
+}
+#section #section2 #arrow {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  z-index: 4;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+#section #section3 {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 30px 20px;
+  width: 100%;
+  border-radius: 16px;
+}
+#section #section3 h2 {
+  color: #313538;
+  font-size: 26.81px;
+  font-weight: 600;
+  line-height: 34.85px;
+}
+#section #section3 > div > div {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#section #section3 > div > div > div {
+  width: 32%;
+}
+#section #section3 > div > div > div p:nth-child(1) {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #8696A1;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+#section #section3 > div > div > div p:nth-child(2) {
+  font-size: 17px;
+  color: #313538;
+  font-weight: 400;
+  line-height: 22.1px;
+  position: relative;
+  display: inline;
+}
+#section #section3 > div > div > div p:nth-child(2) span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(105%, -50%);
+  color: #5DD241;
+  font-weight: 600;
+  width: 200px;
+}
+#section #section3 > div > div > div p:nth-child(2) span img {
+  margin-right: 7px;
+}
+#section #section3 > div > div > div .changeBtn {
+  text-align: right;
+  color: #3DC4DA !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+#section #section4 {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 30px 20px;
+  width: 100%;
+  border-radius: 16px;
+}
+#section #section4 > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#section #section4 > div:nth-child(1) h2 {
+  color: #313538;
+  font-size: 26.81px;
+  font-weight: 600;
+  line-height: 34.85px;
+}
+#section #section4 > div:nth-child(1) p {
+  text-align: right;
+  color: #3DC4DA;
+  font-weight: 600;
+  cursor: pointer;
+}
+#section #section4 > div:nth-child(2), #section #section4 > div:nth-child(3) {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#section #section4 > div:nth-child(2) div, #section #section4 > div:nth-child(3) div {
+  width: 32%;
+}
+#section #section4 > div:nth-child(2) div p:nth-child(1), #section #section4 > div:nth-child(3) div p:nth-child(1) {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #8696A1;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+#section #section4 > div:nth-child(2) div p:nth-child(2), #section #section4 > div:nth-child(3) div p:nth-child(2) {
+  font-size: 17px;
+  color: #313538;
+  font-weight: 400;
+  line-height: 22.1px;
+  position: relative;
+  display: inline;
+}
+#section #section4 > div:nth-child(4) {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#section #section4 > div:nth-child(4) > div {
+  width: 32%;
+}
+#section #section4 > div:nth-child(4) > div p:nth-child(1) {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #8696A1;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+#section #section4 > div:nth-child(4) > div p:nth-child(2) {
+  font-size: 17px;
+  color: #313538;
+  font-weight: 400;
+  line-height: 22.1px;
+  position: relative;
+  display: inline;
+}
+#section #section4 > div:nth-child(4) > div:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#section #section4 > div:nth-child(4) > div:nth-child(1) > div {
+  width: 45%;
+}
+#section #section5 {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 30px 20px;
+  width: 100%;
+  border-radius: 16px;
+}
+#section #section5 > div > div {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#section #section5 > div > div > div {
+  width: 32%;
+}
+#section #section5 > div > div > div p:nth-child(1) {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #8696A1;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+#section #section5 > div > div > div p:nth-child(2) {
+  font-size: 17px;
+  color: #313538;
+  font-weight: 400;
+  line-height: 22.1px;
+  position: relative;
+  display: inline;
+}
+#section #section5 > div > div > div p:nth-child(2) span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(105%, -50%);
+  color: #5DD241;
+  font-weight: 600;
+  width: 200px;
+}
+#section #section5 > div > div > div p:nth-child(2) span img {
+  margin-right: 7px;
+}
+#section #section5 > div > div > div .changeBtn {
+  text-align: right;
+  color: #3DC4DA !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+#section #section6 {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 30px 20px;
+  width: 100%;
+  border-radius: 16px;
+}
+#section #section6 > div > div {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#section #section6 > div > div > div {
+  width: 32%;
+}
+#section #section6 > div > div > div p:nth-child(1) {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #8696A1;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+#section #section6 > div > div > div p:nth-child(2) {
+  font-size: 17px;
+  color: #313538;
+  font-weight: 400;
+  line-height: 22.1px;
+  position: relative;
+  display: inline;
+}
+#section #section6 > div > div > div .changeBtn {
+  text-align: right;
+  color: #3DC4DA !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+#section #section6 > div > div:nth-child(2) > div {
+  width: 30%;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: rgba(104, 223, 242, 0.1019607843);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section #section6 > div > div:nth-child(2) > div img {
+  margin-right: 10px;
+  height: 14px;
+  width: 13px;
+}
+#section #section6 > div > div:nth-child(2) > div span {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22.1px;
 }/*# sourceMappingURL=App.css.map */
