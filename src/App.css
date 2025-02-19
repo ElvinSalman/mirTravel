@@ -10,6 +10,7 @@
   min-height: 100vh;
   width: 100%;
   padding: 20px;
+  overflow: hidden;
 }
 
 #section #section1 {
@@ -29,7 +30,7 @@
   line-height: 33.8px;
 }
 #section #section1 > div {
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +59,7 @@
   color: #8F8F8F;
 }
 #section #section1 > div > div:nth-child(1) {
-  width: 59%;
+  width: 66%;
 }
 #section #section1 > div > div:nth-child(1) img {
   height: 4px;
@@ -66,7 +67,7 @@
   cursor: pointer;
 }
 #section #section1 > div > div:nth-child(2) {
-  width: 39%;
+  width: 32%;
 }
 #section #section1 > div > div:nth-child(2) img {
   height: 15px;
@@ -106,7 +107,7 @@
 }
 #section #section2 #aircraft {
   position: absolute;
-  width: 52%;
+  height: 180px;
   top: 50%;
   left: 52%;
   transform: translate(-50%, -50%);
@@ -153,7 +154,7 @@
   height: 45px;
   width: 45px;
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
@@ -353,6 +354,26 @@
   width: 100%;
   border-radius: 16px;
 }
+#section #section6 #btnClip {
+  width: 30%;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: rgba(104, 223, 242, 0.1019607843);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section #section6 #btnClip img {
+  margin-right: 10px;
+  height: 14px;
+  width: 13px;
+}
+#section #section6 #btnClip span {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22.1px;
+}
 #section #section6 > div > div {
   margin-top: 30px;
   display: flex;
@@ -383,23 +404,262 @@
   font-weight: 600 !important;
   cursor: pointer;
 }
-#section #section6 > div > div:nth-child(2) > div {
-  width: 30%;
-  padding: 10px;
-  border-radius: 16px;
-  background-color: rgba(104, 223, 242, 0.1019607843);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 1024px) {
+  .App {
+    padding: 15px;
+  }
+  #section #section1 {
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+  }
+  #section #section1 > p {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  #section #section1 > div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #section #section1 > div > div {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  #section #section1 > div > div > div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #section #section1 > div > div > div p {
+    font-size: 14px;
+  }
+  #section #section1 > div > div:nth-child(1), #section #section1 > div > div:nth-child(2) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #section #section2 {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+  #section #section2 p:nth-child(1) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  #section #section2 p:nth-child(2) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  #section #section2 #aircraft {
+    width: 70%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #section #section2 #ball,
+  #section #section2 #circle,
+  #section #section2 #circle05 {
+    width: 150px;
+    height: 150px;
+  }
+  #section #section2 #ball {
+    right: 100px;
+  }
+  #section #section2 #circle {
+    right: 200px;
+  }
+  #section #section2 #circle05 {
+    right: 300px;
+  }
+  #section #section2 #arrow {
+    height: 35px;
+    width: 35px;
+    bottom: 10px;
+    right: 10px;
+  }
 }
-#section #section6 > div > div:nth-child(2) > div img {
-  margin-right: 10px;
-  height: 14px;
-  width: 13px;
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  #section #section1 {
+    padding: 10px;
+  }
+  #section #section1 > p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #section #section1 > div {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  #section #section1 > div > div {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  #section #section1 > div > div > div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #section #section1 > div > div > div p {
+    font-size: 14px;
+  }
+  #section #section1 > div > div:nth-child(1),
+  #section #section1 > div > div:nth-child(2) {
+    width: 100%;
+  }
+  #section #section1 > div > div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  #section #section1 > div > div:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  #section #section4 {
+    padding: 20px;
+  }
+  #section #section4 > div:nth-child(1) {
+    flex-direction: column;
+    text-align: center;
+  }
+  #section #section4 > div:nth-child(1) h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #section #section4 > div:nth-child(1) p {
+    text-align: left;
+    margin-top: 10px;
+  }
+  #section #section4 > div:nth-child(2), #section #section4 > div:nth-child(3) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #section #section4 > div:nth-child(2) div, #section #section4 > div:nth-child(3) div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #section #section4 > div:nth-child(2) div p:nth-child(1), #section #section4 > div:nth-child(3) div p:nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #section #section4 > div:nth-child(2) div p:nth-child(2), #section #section4 > div:nth-child(3) div p:nth-child(2) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #section #section4 > div:nth-child(4) {
+    flex-direction: column;
+  }
+  #section #section4 > div:nth-child(4) > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #section #section4 > div:nth-child(4) > div p:nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #section #section4 > div:nth-child(4) > div p:nth-child(2) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #section #section3,
+  #section #section5,
+  #section #section6 {
+    padding: 20px;
+  }
+  #section #section3 #btnClip,
+  #section #section5 #btnClip,
+  #section #section6 #btnClip {
+    width: 100%;
+  }
+  #section #section3 #btnClip span,
+  #section #section5 #btnClip span,
+  #section #section6 #btnClip span {
+    font-size: 14px;
+  }
+  #section #section3 h2,
+  #section #section5 h2,
+  #section #section6 h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #section #section3 > div > div,
+  #section #section5 > div > div,
+  #section #section6 > div > div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #section #section3 > div > div > div,
+  #section #section5 > div > div > div,
+  #section #section6 > div > div > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #section #section3 > div > div > div p:nth-child(1),
+  #section #section5 > div > div > div p:nth-child(1),
+  #section #section6 > div > div > div p:nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #section #section3 > div > div > div p:nth-child(2),
+  #section #section5 > div > div > div p:nth-child(2),
+  #section #section6 > div > div > div p:nth-child(2) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #section #section3 > div > div > div p:nth-child(2) span,
+  #section #section5 > div > div > div p:nth-child(2) span,
+  #section #section6 > div > div > div p:nth-child(2) span {
+    font-size: 14px;
+  }
+  #section #section3 > div > div > div p:nth-child(2) span img,
+  #section #section5 > div > div > div p:nth-child(2) span img,
+  #section #section6 > div > div > div p:nth-child(2) span img {
+    margin-right: 3px;
+  }
+  #section #section3 > div > div > div .changeBtn,
+  #section #section5 > div > div > div .changeBtn,
+  #section #section6 > div > div > div .changeBtn {
+    text-align: left;
+    font-size: 15px;
+  }
 }
-#section #section6 > div > div:nth-child(2) > div span {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 22.1px;
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 8px;
+  }
+  #section #section1 {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #section #section1 > p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #section #section1 > div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  #section #section1 > div > div {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  #section #section1 > div > div > div p {
+    font-size: 12px;
+  }
+  #section #section1 > div > div:nth-child(1),
+  #section #section1 > div > div:nth-child(2) {
+    width: 100%;
+  }
+  #section #section1 > div > div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  #section #section1 > div > div:nth-child(2) {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=App.css.map */

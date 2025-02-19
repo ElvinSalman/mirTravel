@@ -261,7 +261,7 @@ function App() {
               </div>
             </div>
             <div>
-              <div>
+              <div id="btnClip">
                 <img src={paperClip} alt="" />
                 <span>Прикрепленные сканы документов </span>
               </div>
