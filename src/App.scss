@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.App {
+    background-color: #F3F3F3;
+    // #1e1f26
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    // overflow: hidden;
+    // position: relative;
+}
+
+#section {
+    #section1 {
+        background-color: #fff;
+        border-radius: 16px;
+        height: 59px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px;
+
+        &>p {
+            color: #313538;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 33.8px;
+        }
+
+        &>div {
+            width: 25%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &>div {
+                background-color: #F6F7F8;
+                border-radius: 16px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &>div {
+                    margin-right: 10px;
+
+                    p:nth-child(1) {
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 13.2px;
+                        color: #3E4245;
+                    }
+
+                    p:nth-child(2) {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 13.2px;
+                        color: #8F8F8F;
+                    }
+                }
+
+
+
+
+
+                &:nth-child(1) {
+                    width: 59%;
+
+                    img {
+                        height: 4px;
+                        width: 9px;
+                        cursor: pointer;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 39%;
+
+                    img {
+                        height: 15px;
+                        width: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+        }
+    }
+    #section2{
+        height: 179px;
+        width: 100%;
+    }
+}
