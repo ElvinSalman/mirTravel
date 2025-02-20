@@ -18,6 +18,40 @@ import React, { useState, useEffect, useRef } from 'react';
 
 function App() {
 
+  const loginUser = async () => {
+    const url = 'https://demo-mt.94.241.140.202.nip.io/api/v1/auth/login/';
+    
+    // Данные для авторизации
+    const data = {
+      email: 'test_user_ind@example.com',
+      password: 'password123'
+    };
+  
+    // Отправка POST запроса
+    try {
+      const response = await fetch(url, {
+        method: 'POST', // HTTP метод
+        headers: {
+          'Content-Type': 'application/json', // Тип данных в теле запроса
+        },
+        body: JSON.stringify(data) // Преобразуем объект в строку JSON
+      });
+  
+      // Проверяем успешность запроса
+      if (response.ok) {
+        const result = await response.json(); // Получаем JSON ответ
+        console.log('User logged in successfully:', result);
+      } else {
+        console.error('Login failed with status:', response.status);
+      }
+    } catch (error) {
+      console.error('Error logging in:', error);
+    }
+  };
+  
+  // Вызов функции
+  loginUser();
+  
 
 
   return (
