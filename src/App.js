@@ -17,41 +17,70 @@ import React, { useState, useEffect, useRef } from 'react';
 
 
 function App() {
+  const [token, setToken] = useState('');
 
-  const loginUser = async () => {
-    const url = 'https://demo-mt.94.241.140.202.nip.io/api/v1/auth/login/';
-    
-    // Данные для авторизации
+  const login = async () => {
+    const url = 'http://demo-mt.94.241.140.202.nip.io/api/v1/site/auth/login/';
+
     const data = {
-      email: 'test_user_ind@example.com',
-      password: 'password123'
+      email: "test_user_ind@example.com",
+      password: "password123"
     };
-  
-    // Отправка POST запроса
+
     try {
       const response = await fetch(url, {
-        method: 'POST', // HTTP метод
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Тип данных в теле запроса
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data) // Преобразуем объект в строку JSON
+        body: JSON.stringify(data)
       });
-  
-      // Проверяем успешность запроса
-      if (response.ok) {
-        const result = await response.json(); // Получаем JSON ответ
-        console.log('User logged in successfully:', result);
-      } else {
-        console.error('Login failed with status:', response.status);
+
+      if (!response.ok) {
+        throw new Error('Login failed');
       }
+
+      const result = await response.json();
+      // console.log('Login successful', result);
+      setToken(result);
+
     } catch (error) {
-      console.error('Error logging in:', error);
+      console.error('Error:', error);
     }
   };
-  
-  // Вызов функции
-  loginUser();
-  
+
+  // Вызов функции для логина
+  useEffect(() => {
+    login();  // Вызываем авторизацию
+
+  }, []);
+
+
+
+  // if (token) {
+  //   console.log(token?.access_token);
+  //   const token1 = token.access_token;
+  //   const url = 'http://demo-mt.94.241.140.202.nip.io/api/v1/site/me/';
+
+  //   fetch(url, {
+  //     method: 'GET',
+  //     headers: {
+  //       'Authorization': `Bearer ${token?.access_token}`,
+  //       'Content-Type': 'application/json',
+  //     },
+  //     mode: 'no-cors',  // Этот параметр позволяет обойти CORS
+  //   })
+  //   .then(response => {
+  //     // При 'no-cors' вы не сможете получить тело ответа
+  //     console.log(response);
+  //   })
+  //     .then(data => console.log(data))
+  //     .catch(error => console.log(error.message));
+  // }
+
+
+
 
 
   return (
